@@ -13,6 +13,9 @@
 # testing
 /coverage
 
+# muestra json
+/jsons
+
 # next.js
 /.next/
 /out/

@@ -3,24 +3,80 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --tw-border-style:rgb(134, 134, 134);
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+@layer utilities {
+  /* Ocultar scrollbar en Chrome, Safari y Opera */
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+  /* Ocultar scrollbar en IE, Edge y Firefox */
+  .scrollbar-hide {
+    -ms-overflow-style: none; /* IE y Edge */
+    scrollbar-width: none; /* Firefox */
   }
 }
 
+@font-face {
+  font-family: 'Montserrat';
+  src: url('/Montserrat_Alternates/MontserratAlternates-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Montserrat';
+  background-image: url('/groundhog.jpg');
+  color: azure;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(1px);
+}
+
+.modal-container {
+  height: auto;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 20px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.btn-buscar {
+  width: 160px;
+  background-color: teal;
+  border-width: 2px;
+  border-color: rgb(3, 104, 104);
+  border-radius: 20px;
+  box-shadow: inset 5px 5px 10px rgba(7, 80, 80, 0.5);
+  transition: .1s;
+  cursor: pointer;
+}
+
+.btn-buscar:hover {
+  background-color: rgb(2, 70, 70);
+  box-shadow: inset 11px 11px 10px rgba(3, 43, 43, 0.5);
+  border-width: 2px;
+  border-color: black;
+}
+
+.btn-city {
+  color: black;
+  background-color: rgb(188, 255, 255);
+  border-radius: 20px;
+  box-shadow: inset 5px 5px 10px rgba(7, 80, 80, 0.5);
+  transition: .1s;
+  cursor: pointer;
+}
+
+.btn-city:hover {
+  background-color: rgb(167, 184, 184);
+  box-shadow: inset 11px 11px 10px rgba(3, 43, 43, 0.5);
 }
