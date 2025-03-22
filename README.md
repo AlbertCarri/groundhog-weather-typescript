@@ -5,7 +5,7 @@
 ### Tecnologías utilizadas:
 
 **Framework**: Next.js  
-**Funciones del servidor**: JavaScript  
+**Funciones del servidor**: typeScript  
 **Estilos**: Tailwind CSS y CSS  
 **Api**: openweathermap.com  
 **La app fue desplegada a producción en Vercel, aprovechando su integración nativa con Next.js para un proceso de deploy fluido y sencillo**.

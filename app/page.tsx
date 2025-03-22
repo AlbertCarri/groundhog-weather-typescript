@@ -1,6 +1,7 @@
 import { getWeather } from "@/utils/getWeather";
 import SearchCity from "@/components/searchCity";
 import { JSX } from "react";
+import Footer from "@/components/Footer";
 
 export default function Home():JSX.Element {
 
@@ -12,6 +13,7 @@ export default function Home():JSX.Element {
   return (
     <div>
       <SearchCity/>
+      <Footer/>
     </div>
   );
 }
