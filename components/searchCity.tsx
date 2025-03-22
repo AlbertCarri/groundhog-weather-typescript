@@ -84,7 +84,7 @@ export default function SearchCity() {
             </div>
             <div className="basis-1/3">
               <b>Desarrollado en:</b>
-              <p>Javascript - NEXT.js</p>
+              <p>TypeScript - NEXT.js</p>
               <p>& Tailwind</p>
             </div>
             <div className="basis-1/3 flex flex-col md:justify-around">
